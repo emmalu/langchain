@@ -1,7 +1,7 @@
 black
 flask
 gunicorn
-langchain
+langchain==0.0.118
 openai
 pydantic
 python-dotenv
