@@ -1,5 +1,5 @@
 from dotenv import load_dotenv
-from flask import Flask, jsonify, redirect, render_template, request, url_for
+from flask import Flask, request
 from langchain import LLMChain
 from langchain.chat_models import ChatOpenAI
 from langchain.prompts.chat import (
@@ -8,11 +8,10 @@ from langchain.prompts.chat import (
     HumanMessagePromptTemplate,
 )
 import os
-from pydantic import BaseModel, constr
-import re
+from platform import python_version
 from typing import List
 
-
+print(python_version())
 load_dotenv()
 OPEN_AI_KEY = os.getenv("OPENAI_API_KEY")
 chat = ChatOpenAI(temperature=0.5)
