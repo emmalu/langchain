@@ -1,0 +1,7 @@
+black
+flask
+gunicorn
+langchain
+openai
+pydantic
+python-dotenv
